@@ -25,7 +25,7 @@ FROM eclipse-temurin:21-jre-alpine
 WORKDIR /app
 
 # Expose the port Spring Boot will run on
-EXPOSE 8081 # internal port
+EXPOSE 8081
 
 # Copy the executable JAR from the build stage
 COPY --from=build /app/target/*.jar app.jar

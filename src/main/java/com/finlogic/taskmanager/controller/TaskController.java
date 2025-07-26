@@ -12,7 +12,7 @@ import java.util.Optional; // Import for Optional<Task>
 
 @RestController // 1. Marks this class as a REST Controller
 @RequestMapping("/api/tasks") // 2. Base URL path for all endpoints in this controller
-@CrossOrigin(origins = "http://localhost:5173") // 3. IMPORTANT: Allows your React app to make requests
+@CrossOrigin(origins = "*") // 3. IMPORTANT: Allows your React app to make requests
 public class TaskController {
 
     @Autowired // 4. Injects the TaskRepository
